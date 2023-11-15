@@ -55,11 +55,19 @@
         <section>
           <div class="modal hidden" id="modal">
             <h2 class="modal-heading">Enter card details</h2>
-              <form id="buy-form">
-                <input class="form-input" placeholder="Enter your name" type="text" required />
-                <input class="form-input" placeholder="Enter card number" type="number" required />
-                <input class="form-input" placeholder="Enter CVV" type="number" required />
-              </form>
+            <form id="buy-form">
+              <input
+                class="form-input"
+                id="form-input-name"
+                placeholder="Enter your name"
+                type="text"
+                required
+              />
+
+              <input class="form-input" placeholder="Enter card number" type="number" required />
+
+              <input class="form-input" placeholder="Enter CVV" type="number" required />
+            </form>
             <button
               class="sumbmit-form-btn"
               id="submit-btn"
@@ -73,9 +81,11 @@
         </section>
 
         <section class="order-completed-section hidden" id="order-completed-section">
-          <div class="order-completed container-inner">
-            <p class="order-completed-message">Thanks, James!Your order is on its way!</p>
-          </div>
+          <!-- <div class="order-completed container-inner">
+            <p class="order-completed-message" id="order-completed">
+              Thanks, James!Your order is on its way!
+            </p>
+          </div> -->
         </section>
       </main>
     </div>
