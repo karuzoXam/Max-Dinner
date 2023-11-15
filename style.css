@@ -1,0 +1,228 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Header Styles */
+header {
+  background-image: url('images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main-header {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.paragraph-header {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* Product Item Styles */
+.products {
+  height: 360px;
+  overflow: auto;
+}
+
+.item {
+  padding: 18px 10px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.item-img {
+  font-size: 40px;
+}
+
+.item-info {
+  padding: 10px;
+}
+
+.secontary-heading {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.ingredients-paragraph {
+  font-size: 12px;
+  color: #8b8b8b;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.add-to-cart-btn {
+  margin-left: auto;
+  margin-top: 8px;
+  align-self: flex-start;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #d2d2d2;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-icon {
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+/* Order List Styles */
+.order-container {
+  margin-top: 30px;
+}
+
+.order-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.order-list {
+  height: 60px;
+  overflow: auto;
+}
+
+.order-products,
+.order-total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.order-product-name {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.remove-order-btn {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 4px;
+  color: #8b8b8b;
+  font-size: 8px;
+}
+
+.order-price {
+  text-align: end;
+}
+
+.order-total-container {
+  border-top: 2px solid #4b5563;
+  padding-top: 14px;
+  margin-bottom: 20px;
+}
+
+.order-total {
+  font-weight: 700;
+}
+
+.order-btn,
+.sumbmit-form-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #34d399;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Modal Styles */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  background-color: #fff;
+  width: 400px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.652);
+}
+
+.modal-heading {
+  padding: 30px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.form-input {
+  padding: 20px;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.sumbmit-form-btn {
+  margin: 20px 0 20px 0;
+}
+
+/* Order Completed Styles */
+.order-completed-section {
+  margin-top: 30px;
+}
+
+.order-completed {
+  background-color: #ecfdf5;
+  text-align: center;
+}
+
+.order-completed-message {
+  padding: 30px 0;
+  color: #064e3b;
+  font-size: 18px;
+}
+
+/* Utility Styles */
+.container {
+  margin: 0 auto;
+}
+
+.container-inner {
+  margin: 0 auto;
+  padding: 0px 16px;
+}
+
+.hidden {
+  display: none;
+}
