@@ -127,10 +127,11 @@ const closeModal = function () {
 
 const submitForm = function (e) {
   e.preventDefault();
+  const inputName = document.getElementById('form-input-name').value;
   clearFormInputs();
   closeModal();
   clearCart();
-  showMessage();
+  createMessage(inputName);
   reloadPage();
 };
 
@@ -138,8 +139,21 @@ const clearFormInputs = function () {
   document.querySelectorAll('.form-input').forEach((inputField) => (inputField.value = ''));
 };
 
-const showMessage = function () {
+const createMessage = function (name) {
+  const html = `
+      <div class="order-completed container-inner">
+        <p class="order-completed-message" id="order-completed">
+          Thanks, ${name}!Your order is on its way!
+        </p>
+      </div>
+  `;
+
+  showMessage(html);
+};
+
+const showMessage = function (html) {
   document.getElementById('order-completed-section').classList.remove('hidden');
+  document.getElementById('order-completed-section').innerHTML = html;
 };
 
 const reloadPage = function () {
