@@ -1,1 +1,1 @@
-# Max-Dinner
+# Mobile Dinner App
